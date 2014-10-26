@@ -1,0 +1,15 @@
+//Insert your string as the assigned value of theStringRaw
+var theStringRaw = "JoSHUAuHSOJ";
+var theString = theStringRaw.toUpperCase();
+var length = theString.length;
+var index = 0;
+var match = true;
+
+while (index < (length/2)){
+    if(theString.charAt(index) == theString.charAt(length-(index+1)))    
+    {index+=1;}
+    else{match = false;
+        break;}
+}
+if (match)alert("THAT's a Palindrome");
+if (!match)alert("Doesn't look like that is a palindrome"); 
